@@ -1,0 +1,651 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akku - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #0e1b51;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: #15161d;
+      }
+      nav ul {
+        display: flex;
+        align-items: center;
+      }
+      nav ul li {
+        list-style: none;
+        cursor: pointer;
+        margin: 0 26px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a :hover {
+        color: #000;
+        background-color: #0e1b51;
+      }
+      main hr {
+        border: 0;
+        background-color: #3255df;
+        height: 0.2px;
+        margin: 40px 120px;
+      }
+      .left {
+        font-size: 1.4rem;
+        cursor: pointer;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 60px 0;
+      }
+      .leftSection {
+        color: white;
+        font-size: 2.2rem;
+      }
+      .leftSection .bottons .btn {
+        padding: 8px;
+        background-color: #2340b4;
+        color: white;
+        font-weight: 550;
+        font-size: 12px;
+        cursor: pointer;
+        border: 1.5px solid white;
+        border-radius: 5px;
+      }
+      .leftSection .bottons {
+        padding: 30px 15px;
+      }
+      .leftSection .bottons .btn a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .rightSection {
+        color: white;
+      }
+
+      .rightSection img {
+        height: 310px;
+        width: 86%;
+      }
+      .text-purple {
+        color: #fe4cfe;
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: #fe4cfe;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 70vh;
+      }
+      .secondSection h1 {
+        font-style: 1.8rem;
+      }
+      .secondSection .box {
+        margin: 50px 50px;
+        width: 73vw;
+        height: 0.5px;
+        background-color: white;
+        display: flex;
+      }
+      .secondSection .vertical {
+        background-color: #ffffff;
+        height: 60px;
+        width: 0.5px;
+        margin: 0 90px;
+      }
+      .img-top {
+        width: 40px;
+        position: relative;
+        top: -44px;
+        left: -18px;
+      }
+      .vertical-title {
+        width: 150px;
+        position: relative;
+        top: 20px;
+        left: -2px;
+      }
+      .vertical-dics {
+        position: relative;
+        top: 8px;
+        left: -3px;
+        width: 150px;
+        color: gray;
+        font-size: 9px;
+        /* footer section */
+      }
+      footer {
+        background-color: #1b1f30;
+        font-size: 15px;
+      }
+      .footer {
+        display: flex;
+        padding: 10px 100px;
+        justify-content: space-evenly;
+      }
+      .footer ul li {
+        list-style: none;
+        cursor: pointer;
+      }
+      .footer > div {
+        width: 200px;
+        margin: 40px 40px;
+      }
+      .footer-first img {
+        width: 70px;
+        cursor: pointer;
+      }
+      footer .footer-rights {
+        padding-bottom: 12px;
+        color: gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      /* css of phone */
+      @media screen and (max-width: 850px) {
+        body {
+          background-color: #330a51;
+          min-width: fit-content;
+        }
+        nav {
+          flex-direction: column;
+          width: 100%;
+        }
+        nav ul li {
+          list-style: none;
+          cursor: pointer;
+          margin: 1px 4px;
+        }
+        main hr {
+          width: 75vw;
+          margin: 38px 86px;
+        }
+        .rightSection {
+          margin-bottom: 10px;
+          width: 60%;
+        }
+        .rightSection img {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+        }
+        /* vertical titile and dics paer */
+        .vertical-title,
+        .vertical-dics {
+          left: 45px;
+        }
+        .vertical-title {
+          top: -80px;
+        }
+        .vertical-dics {
+          position: relative;
+          left: 1px;
+        }
+
+        .secondSection {
+          width: 75vh;
+          max-width: 60vw;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        .box {
+          flex-direction: column;
+        }
+        .secondSection .box {
+          width: 50vw;
+          margin: 55px -11px;
+          background-color: #330a51;
+        }
+        .secondSection .vertical {
+          height: unset;
+          margin: 0 1vw;
+        }
+        .text-gray {
+          margin-left: -66px;
+        }
+        .secondSection h1 {
+          margin-left: -64px;
+        }
+        /* .firstSection and .leftSection */
+        .firstSection {
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: center;
+        }
+        .leftSection {
+          margin-top: 38px;
+          width: 100%;
+          flex-direction: column;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .leftSection .bottons {
+          padding: 8px 15px;
+        }
+        .secondSection {
+          width: 100vh;
+          margin: auto;
+          height: 294vh;
+        }
+      }
+      /* Contect Section */
+      #contect {
+        position: relative;
+      }
+
+      #contect::before {
+        content: "";
+        position: absolute;
+        background-color: #0e1b51;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
+      }
+      #contact-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+      }
+      #contact-box form {
+        width: 45%;
+      }
+      #contact-box label {
+        font-size: 1.3rem;
+      }
+      #contact-box input,
+      #contact-box textarea {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+      }
+      /* Urility Section */
+      .h-primary {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.7rem;
+        padding: 12px;
+        font-weight: 600;
+        margin-left: 110px;
+      }
+      .from-section .submit-btn {
+        padding: 8px 20px;
+        background-color: #2340b4;
+        color: white;
+        font-weight: 550;
+        font-size: 15px;
+        cursor: pointer;
+        border: 1.5px solid white;
+        border-radius: 5px;
+      }
+      /* container section */
+      .container h1 {
+        margin-left: 110px;
+        padding: 20px 20px;
+      }
+      .container .main {
+        margin-left: 250px;
+        margin-right: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: column; */
+      }
+      .container .main ul li {
+        list-style: square;
+      }
+      /* Footer section */
+      .footer ul a {
+        display: flex;
+        text-decoration: none;
+        color: gray;
+      }
+      .footer .footer-first ul a {
+        color: #c4c3c3;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="home">
+      <nav>
+        <div class="left">Akram Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="#contect">Contects me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <div>Hi, My name is <span class="text-purple">Akram</span></div>
+          <div>and I am a Passionate</div>
+          <span id="element"></span>
+          <div class="bottons">
+            <button class="btn">Donwnload Resume</button>
+            <button class="btn">
+              <a href="https://github.com/mdakram2002">Visit GitHub</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="rightSection">
+          <img src="developer.png" alt="" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="secondSection">
+        <span class="text-gray">What i have done so far</span>
+        <h1>Work Experience:</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="img-top" src="html.png" alt="" />
+            <div class="vertical-title">
+              HTML Developer-
+              <div>(2022-23)</div>
+              <div class="vertical-dics">
+                I have expertise in HTML like HTML basics: Concepts like
+                tags,elements, and attributes,heading,link,imag,
+                vedio,audio,vedio,document structure, Creating tables to
+                organize data and more.
+              </div>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="img-top" src="css.png" alt="" />
+            <div class="vertical-title">
+              CSS Developer-
+              <div>(2022-23)</div>
+              <div class="vertical-dics">
+                I have expertise in CSS like CSS all basics Concepts including
+                Color Properties and Text,flexbox,media query, key and more
+                Understanding how to link external stylesheets to style your
+                webpage using CSS.
+              </div>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="img-top" src="js.png" alt="" />
+            <div class="vertical-title">
+              JS Developer-
+              <div>(2022-23)</div>
+              <div class="vertical-dics">
+                Basic Understanding in javaScript like declear variable, funtion
+                calling, Event Leasting, DOM /Documents objects Models,
+                Console.log, Promise, this.props, Async & Await,ES5 Callback
+                ,ES6 ,Promise ES7 async & await.
+              </div>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="img-top" src="react.png" alt="" />
+            <div class="vertical-title">
+              React Developer-
+              <div>(2022-23)</div>
+              <div class="vertical-dics">
+                I have expertise in React.js like Functions and Arrow Functions,
+                Objects, Arrays and array methods, Destructuring, Template
+                literals,Ternary Operators. ES Modules and Import / Export
+                Syntax.
+              </div>
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="img-top" src="git and github.png" alt="" />
+            <div class="vertical-title">
+              Git Developer-
+              <div>(2022-23)</div>
+              <div class="vertical-dics">
+                I have expertise in Git and Github like git clone repository,git
+                init,git add file , git commit -m "Your message", git status,
+                git pull, git push, git branch, git checkout branch,git merge
+                branch,git log, git diff.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <section id="about" class="container">
+        <h1 style="font-size: 27px">About:</h1>
+        <div class="main">
+          <div>
+            <table>
+              <tr>
+                <div>
+                  <ul>
+                    <li>
+                      Bachelor of Technology in Computer Science and Engineering
+                      With Artificiall Intelligence & Machine Learning from
+                      "Technocrats Institute of Technology", Bhopal (M.P.)
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>SGPA: 7.76</li>
+                  </ul>
+                </div>
+                <br />
+                <div>
+                  <ul>
+                    <li>
+                      Schooling from Supaul Sinior Secondry School, Supaul
+                      (Bihar)
+                    </li>
+                    <li>SGPA: 7.1</li>
+                  </ul>
+                </div>
+                <td>
+                  <!-- <p class="img-w">
+                    👋 Hello! I'm MD AKRAM, a passionate Software Engineer/
+                    Software Developer experienced in frontend and full stack
+                    development.I thrive on solving complex problems through code
+                    and creating intuitive user interfaces. I have expertise in
+                    HTML, CSS, framwork of CSS bootstrap & Tailwind, JavaScript,
+                    Git & GitHub, React.js.
+                  </p> -->
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <section id="contect">
+        <h1 class="h-primary center">Contect me:</h1>
+        <div id="contact-box">
+          <form action="" class="from-section">
+            <div class="form-group">
+              <label for="name">Name: </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter Your Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Email: </label>
+              <input
+                type="email"
+                name="name"
+                id="email"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Phone No.: </label>
+              <input
+                type="phone"
+                name="name"
+                id="phone"
+                placeholder="Enter Your Phone No."
+              />
+            </div>
+            <div class="form-group">
+              <label for="name">Messege: </label>
+              <textarea
+                name="messege"
+                id="messege"
+                cols="50"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <ul>
+            <a href="/">Social Media:</a>
+            <a href="https://www.linkedin.com/in/mdakram2002/">LinkedIn</a>
+            <a href="https://github.com/mdakram2002">GitHub</a>
+            <a href="https://www.youtube.com/@iamakramshaikh">YouTube</a>
+            <a href="https://www.instagram.com/mdakram2002_/">Instagram</a>
+          </ul>
+          <!-- <img src="logo.png.png" alt="" /> -->
+        </div>
+        <div class="footer-second">
+          <ul>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a
+              href="https://www.youtube.com/watch?v=h2h1HOsCOCs&list=PLiZft-kpzSm1wm1hKpB7S6FYshXC8t0Gz"
+              >Blogs</a
+            >
+            <a href="">Projects</a>
+            <a href="#contect">Contects Us</a>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <a href="https://www.freecodecamp.org/news/tag/web-development/"
+              >Development</a
+            >
+            <a href="https://www.geeksforgeeks.org/data-structures/"
+              >Data Structure</a
+            >
+            <a
+              href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/?ref=lbp"
+              >Algorithm</a
+            >
+            <a
+              href="https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/"
+              >Portfolio</a
+            >
+            <a href="https://www.youtube.com/@iamakramshaikh">YouTube</a>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <ul>
+              <a href="https://www.w3schools.com/whatis/whatis_frontenddev.asp"
+                >Front End</a
+              >
+              <a href="https://www.w3schools.com/what">Back End</a>
+              <a href="https://nodejs.org/en">Node.js</a>
+              <a href="https://getbootstrap.com/">Bootstrap</a>
+              <a href="https://tailwindcss.com/docs/installation"
+                >Tailwind CSS</a
+              >
+            </ul>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <ul>
+              <a href="https://www.w3schools.com/html/">HTML</a>
+              <a href="https://www.w3schools.com/css/css_selectors.asp">CSS</a>
+              <a href="https://www.codewithharry.com/tutorial/js/"
+                >JavaScript</a
+              >
+              <a href="https://www.codewithharry.com/tutorial/react-home/"
+                >React.js</a
+              >
+              <a
+                href="https://www.freecodecamp.org/news/git-and-github-for-beginners/"
+                >Git and GitHub</a
+              >
+            </ul>
+          </ul>
+        </div>
+        <!-- <div class="footer-fourth">
+          <ul>
+            <a href="/">Social Media</a>
+            <a href="https://www.linkedin.com/in/mdakram2002/">LinkedIn</a>
+            <a href="https://github.com/mdakram2002">GitHub</a>
+            <a href="https://www.youtube.com/@iamakramshaikh">YouTube</a>
+            <a href="https://www.instagram.com/mdakram2002_/">Instagram</a>
+          </ul>
+        </div> -->
+      </div>
+      <div class="footer-rights">
+        Copyrights© www.akkusportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "UI/UX Designer",
+          "YouTuber",
+          "Web Designer",
+          "Vedio Editor",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
